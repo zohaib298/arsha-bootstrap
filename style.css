@@ -1,5 +1,5 @@
 :root{
-    --main-color:#37517E;
+    --main-color:rgb(55, 81, 126);
 }
 
 .hero-section{
@@ -63,38 +63,85 @@ transform: translateY(-10px);
     transition: all 0.4s;
 }
 .call-section{
-    background-image: url(https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp);
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    color: white;
+ background: linear-gradient(to right,rgba(55, 81, 126,0.7),rgba(55, 81, 126,0.7)), url('https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp');
+}
+.animation-section{
+    overflow: hidden;
+}
 
+.box-area{
+bottom: -110px;
+transition: all 0.4s;
+background-color: rgba(255,255,255,0.8);
 }
-.call-overlay{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 50, 0.5);
+.animation-section:hover .box-area{
+    bottom: -0px;
 }
-.call-content{
-    position: relative;
-    z-index: 1;
+.social-apps i{
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content:center ;
+ border-radius: 20px;
+ transition: all 0.3s;
 }
-    .call-content .btn {
-      border: 2px solid white;
-      color: white;
-      border-radius: 50px;
-      padding: 15px 45px;
-      
-      background: transparent;
-      transition: all 0.5s;
-    }
-    .call-content .btn:hover {
-      background: lightskyblue;
-      color: white;
-    }
+  .social-apps i:hover{
+   background-color: rgb(67, 176, 244);
+   color: white;
+  }
+ .questions :hover {
+ color: rgb(67, 176, 244); ;
+ }
+ .blog-content{
+    overflow: hidden;
+   position: relative;
+ }
+
+ .blog-content img{
+     transition: all 0.4s;
+ }
+ .blog-content h5 ,.blog-content a{
+    transition: all 0.4s;
+ }
+ .blog-content:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+.blog-content:hover h5 ,.blog-content   :hover a{
+ color: var(--bs-info) !important;
+
+ cursor: pointer;
+}
+
+.date{
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fs-sm{
+ font-size: 1.2rem;
+}
+.arrow{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(67, 176, 244) !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     /* .. */
     /* .. */
